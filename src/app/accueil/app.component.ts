@@ -2,9 +2,12 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  templateUrl: './accueil.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+
+export class AccueilComponent {
   title = 'SafannerWeb';
+
 }
+

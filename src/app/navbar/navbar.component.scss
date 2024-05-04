@@ -1,0 +1,49 @@
+/* styles.scss */
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
+/* Ajout de styles pour centrer le contenu */
+.navbar-container {
+    display: flex;
+    justify-content: center;
+  }
+.navbar {
+    background-color: #EAE8D5; /* Couleur de fond de la barre de navigation */
+    padding: 10px 70px; /* Espacement interne */
+    font-family: 'Knewave', cursive; /* Utilisation de la police Knewave */
+    
+  }
+  
+  .navbar-nav {
+    list-style-type: none; /* Supprime les puces de la liste */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Affiche les éléments de la liste en ligne */
+    justify-content: flex-start; /* Alignement des éléments à gauche */
+    align-items: center; /* Alignement vertical des éléments au centre */
+  }
+  
+  .nav-item {
+    margin-right: 70px; /* Espacement entre les éléments */
+  }
+  
+  .nav-link {
+    color: #92A18E; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    font-size: 22px; /* Taille de la police */
+    text-shadow: -1px -1px 0 #000,  
+                 1px -1px 0 #000,
+                 -1px 1px 0 #000,
+                 1px 1px 0 #000; /* Contour noir */
+  }
+  
+  .logo {
+    width: 112px; /* Largeur de l'image */
+    height: 80px; /* Hauteur de l'image */
+    margin-right: auto; /* Pousse l'image vers la gauche */
+  }
+  
+  .fa-shopping-cart {
+    color: #92A18E; /* Couleur de l'icône */
+    font-size: 21px; /* Taille de l'icône */
+  }
+  
