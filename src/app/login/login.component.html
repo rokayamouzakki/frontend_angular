@@ -13,24 +13,24 @@
                 </mat-form-field>
                 <mat-form-field appearance="outline">
                     <mat-label>Password</mat-label>
-                    <input matInput formControlName="password" placeholder="password" required>
+                    <input matInput type="{{ hidePassword ? 'password' : 'text' }}" formControlName="password" placeholder="password" required>
 
                     <button mat-icon-button matSuffix (click)="togglePasswordVisibility()">
                         <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
                     </button>
 
                     <mat-error *ngIf="loginForm.get('password').invalid && loginForm.get('password').touched">
-                        Please enter a valid email.
+                        Please enter a valid password. <!-- Correction du message d'erreur -->
                     </mat-error>
                 </mat-form-field>
 
-                <button mat-raised-button color="primary" type="submit" [disabled ]="!loginForm.invalid"
-                (click)="onSubmit()" >Login</button>
+                <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid"
+                (click)="onSubmit()">Login</button> <!-- Correction de la condition de désactivation du bouton -->
             </form>
         </mat-card-content>
 
         <mat-card-actions>
-            <button mat-button color="accent" routerLink="/signup"> Don't have an account? Sign up</button>
+            <button mat-button color="accent" routerLink="/signup">Don't have an account? Sign up</button>
         </mat-card-actions>
     </mat-card>
 </div>
