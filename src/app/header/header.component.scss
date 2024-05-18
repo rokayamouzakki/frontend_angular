@@ -1,0 +1,97 @@
+/* styles.scss */
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+@font-face {
+    font-family: 'Azonix';
+    src: url('/assets/fonts/Azonix.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+/* Ajout de styles pour centrer le contenu */
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh; /* Assurez-vous que la hauteur de la page est au moins égale à la hauteur de l'écran */
+
+  }
+.navbar {
+    
+    padding: 10px 70px; /* Espacement interne */
+    font-family: 'Knewave', cursive; /* Utilisation de la police Knewave */
+    
+  }
+  
+  .navbar-nav {
+    list-style-type: none; /* Supprime les puces de la liste */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Affiche les éléments de la liste en ligne */
+    justify-content: flex-start; /* Alignement des éléments à gauche */
+    align-items: center; /* Alignement vertical des éléments au centre */
+  }
+  
+  .nav-item {
+    margin-right: 70px; /* Espacement entre les éléments */
+  }
+  
+  .nav-link {
+    color: #92A18E; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    font-size: 17px; /* Taille de la police */
+    text-shadow: -1px -1px 0 #000,  
+                 1px -1px 0 #000,
+                 -1px 1px 0 #000,
+                 1px 1px 0 #000; /* Contour noir */
+  }
+  
+  .logo {
+    width: 112px; /* Largeur de l'image */
+    height: 80px; /* Hauteur de l'image */
+    margin-right: auto; /* Pousse l'image vers la gauche */
+  }
+  
+  .fa-shopping-cart {
+    color: #92A18E; /* Couleur de l'icône */
+    font-size: 21px; /* Taille de l'icône */
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Assurez-vous que le header soit au-dessus de tout autre contenu */
+    background-color: #fff; /* Couleur de fond du header */
+    /* Ajoutez d'autres styles selon vos besoins */
+  }
+
+  /* styles.css (ou un fichier CSS approprié) */
+.transparent-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+    color: #fff; /* Couleur de texte blanche lorsque le header est transparent */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Ajoutez une transition pour un effet en douceur */
+  }
+  
+  .opaque-header {
+    background-color: #fff; /* Couleur de fond blanche lorsque le header n'est pas transparent */
+    color: #000; /* Couleur de texte noire lorsque le header n'est pas transparent */
+  }
+  
+  .white-link {
+    color: #fff; /* Couleur de texte blanche pour les liens */
+  }
+  
+  .black-link {
+    color: #000; /* Couleur de texte noire pour les liens */
+  }
+
+  .green-link{
+    color: #92A18E;
+  }
+  
+  /* Ajoutez d'autres styles supplémentaires au besoin */
+  

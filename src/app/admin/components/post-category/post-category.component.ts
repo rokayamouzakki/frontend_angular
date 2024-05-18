@@ -20,7 +20,6 @@ export class PostCategoryComponent {
     private adminService: AdminService
   ) {}
 
-
   ngOnInit(): void{
     this.categoryForm = this.fb.group({
       name: [null, [Validators.required]],
@@ -30,10 +29,21 @@ export class PostCategoryComponent {
   
   addCategory(): void {
     if(this.categoryForm.valid){
-
+      this.adminService.addCategory(this.categoryForm.value).subscribe((res) =>{
+        if (res.id != null){
+          this.snackBar.open('Category Posted Successfully!', 'Close', {
+            duration: 5000,
+        });
+        this.router.navigateByUrl('/admin/dashboard');
+      }else{
+        this.snackBar.open(res.message, 'Close', {
+          duration: 5000,
+          panelClass: 'error-snackbar'
+        });
+      }
+    })
     }else{
       this.categoryForm.markAllAsTouched();
     }
   }
-
 }

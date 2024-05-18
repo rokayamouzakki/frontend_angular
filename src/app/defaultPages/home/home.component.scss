@@ -1,0 +1,63 @@
+ //premier view 
+ .homepage {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left, .right {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .left {
+    background-image: url('/assets/img/Journal1.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .right {
+    background-image: url('/assets/img/Affirmations.PNG');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: -180px;
+    font-family: 'Knewave', cursive;
+    color: white;
+    text-shadow: -1px -1px 0 #000,  
+                 1px -1px 0 #000,
+                 -1px 1px 0 #000,
+                 1px 1px 0 #000; /* Contour noir */
+  }
+  
+  p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color:  white;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    margin-top: 140px;
+
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  

@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { AuthService } from '../services/auth/auth.service';
+import { AuthService } from '../../services/auth/auth.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { UserStorageService } from '../services/stotage/user-storage.service';
+import { UserStorageService } from '../../services/stotage/user-storage.service';
 
 @Component({
   selector: 'app-login',
