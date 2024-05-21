@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './defaultPages/home/home.component';
 import { OurStoryComponent } from './defaultPages/our-story/our-story.component';
+import { PostCategoryComponent } from './admin/components/post-category/post-category.component';
 
 const routes: Routes = [
                         { path: '', component: HomeComponent }, 
@@ -14,8 +15,8 @@ const routes: Routes = [
                         { path: "signup",component: SignupComponent},
                         { path: 'customers/dashboard', loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule) },
                         { path: 'admin/dashboard', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
-                        { path: 'admin/post-category', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
-                        { path: 'post-product', component: PostProductComponent },
+                        { path: 'admin/category', component: PostCategoryComponent },
+                        { path: 'admin/product', component: PostProductComponent },
                         { path: 'header', component: HeaderComponent },
                         { path: 'footer', component: FooterComponent },
                         { path: 'ourStory', component: OurStoryComponent }, 

@@ -21,7 +21,7 @@ export class UserStorageService {
 
   }
 
-  static getToken(): string {
+  public static getToken(): string {
     return localStorage.getItem(TOKEN);
   }
 

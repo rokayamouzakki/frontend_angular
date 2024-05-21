@@ -6,8 +6,7 @@ import { PostCategoryComponent } from './components/post-category/post-category.
 import { PostProductComponent } from './components/post-product/post-product.component';
 
 const routes: Routes = [
-  { path: '', component: AdminComponent },
-  { path: 'dashboard', component: DashboardComponent },
+  { path: '', component: DashboardComponent },
   { path: 'category', component: PostCategoryComponent },
   { path: 'product', component: PostProductComponent }
 

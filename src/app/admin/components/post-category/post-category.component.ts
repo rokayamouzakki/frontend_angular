@@ -20,16 +20,16 @@ export class PostCategoryComponent {
     private adminService: AdminService
   ) {}
 
-  ngOnInit(): void{
+  ngOnInit(): void {
     this.categoryForm = this.fb.group({
       name: [null, [Validators.required]],
       description: [null, [Validators.required]],
-    })
+    });
   }
   
   addCategory(): void {
     if(this.categoryForm.valid){
-      this.adminService.addCategory(this.categoryForm.value).subscribe((res) =>{
+      this.adminService.addCategory(this.categoryForm.value).subscribe((res : any) =>{
         if (res.id != null){
           this.snackBar.open('Category Posted Successfully!', 'Close', {
             duration: 5000,
@@ -41,7 +41,7 @@ export class PostCategoryComponent {
           panelClass: 'error-snackbar'
         });
       }
-    })
+    });
     }else{
       this.categoryForm.markAllAsTouched();
     }
